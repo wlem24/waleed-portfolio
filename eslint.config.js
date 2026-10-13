@@ -16,6 +16,8 @@ export default [
         console: 'readonly',
         requestAnimationFrame: 'readonly',
         cancelAnimationFrame: 'readonly',
+        IntersectionObserver: 'readonly',
+        fetch: 'readonly',
       },
     },
     rules: {
