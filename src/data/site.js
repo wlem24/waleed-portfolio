@@ -7,6 +7,7 @@ export const PROFILE = {
   email: 'albrkati9@gmail.com',
   phone: '+966 59 705 5755',
   phoneHref: 'tel:+966597055755',
+  whatsapp: 'https://wa.me/966597055755?text=Hello%20Waleed%2C%20I%20found%20your%20portfolio.',
   github: 'https://github.com/wlem24',
   linkedin: 'https://linkedin.com/in/waleed-albarakati',
   cv: `${import.meta.env.BASE_URL}Waleed_Albarakati_CV.pdf`,
