@@ -7,7 +7,7 @@ export default function Nav() {
   const [open, setOpen] = useState(false)
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 20)
+    const onScroll = () => setScrolled(window.scrollY > window.innerHeight - 140)
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
@@ -25,7 +25,7 @@ export default function Nav() {
             </li>
           ))}
         </ul>
-        <a href="#contact" className="nav-cta">Let’s talk</a>
+        <a href="#contact" className="nav-cta">Contact</a>
         <button className="nav-toggle" aria-label="Toggle menu" onClick={() => setOpen((o) => !o)}>
           <i className="fa-solid fa-bars"></i>
         </button>

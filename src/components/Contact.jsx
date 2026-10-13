@@ -15,11 +15,10 @@ export default function Contact() {
 
   return (
     <section id="contact">
-      <div className="container">
-        <div className="contact-wrap glass reveal">
-          <div className="eyebrow" style={{ justifyContent: 'center' }}>Contact</div>
-          <h2>Let’s build something together.</h2>
-          <p>Open to full-stack and AI engineering roles. Based in {PROFILE.location} — happy to work on-site or remote.</p>
+      <div className="contact-field">
+        <div className="contact-wrap reveal">
+          <h2>Contact</h2>
+          <p>Open to full-stack and AI engineering roles in {PROFILE.location}, on-site or remote.</p>
 
           <form className="contact-form" onSubmit={handleSubmit}>
             <div>
@@ -42,9 +41,9 @@ export default function Contact() {
           </form>
 
           <div className="contact-methods">
-            <a href={`mailto:${PROFILE.email}`} className="btn btn-ghost"><i className="fa-regular fa-envelope"></i>{PROFILE.email}</a>
-            <a href={PROFILE.linkedin} target="_blank" rel="noopener noreferrer" className="btn btn-ghost"><i className="fa-brands fa-linkedin-in"></i>LinkedIn</a>
-            <a href={PROFILE.github} target="_blank" rel="noopener noreferrer" className="btn btn-ghost"><i className="fa-brands fa-github"></i>GitHub</a>
+            <a href={`mailto:${PROFILE.email}`} className="btn btn-glass"><i className="fa-regular fa-envelope"></i>{PROFILE.email}</a>
+            <a href={PROFILE.linkedin} target="_blank" rel="noopener noreferrer" className="btn btn-glass"><i className="fa-brands fa-linkedin-in"></i>LinkedIn</a>
+            <a href={PROFILE.github} target="_blank" rel="noopener noreferrer" className="btn btn-glass"><i className="fa-brands fa-github"></i>GitHub</a>
           </div>
         </div>
       </div>

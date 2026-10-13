@@ -4,12 +4,10 @@ export default function TechStack() {
   return (
     <section id="tech-stack" className="alt">
       <div className="container">
-        <div className="eyebrow">Tech Stack</div>
-        <h2 className="section-title">A stack built for AI-powered products.</h2>
-        <p className="section-lead">Full-stack fundamentals, extended into the retrieval and reasoning layer.</p>
+        <h2 className="section-title">Tech Stack</h2>
         <div className="skills-grid">
           {SKILL_GROUPS.map((g) => (
-            <div className="skill-card glass reveal" key={g.title}>
+            <div className="skill-card reveal" key={g.title}>
               <div className="icon"><i className={g.icon}></i></div>
               <h3>{g.title}</h3>
               <div className="tag-list">
