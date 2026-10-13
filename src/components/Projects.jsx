@@ -18,10 +18,10 @@ function LinkChip({ href, icon, label }) {
 
 function CaseStudy({ p, index }) {
   return (
-    <article className="project glass reveal">
+    <article className="project reveal">
       <div className="project-head">
         <div>
-          <div className="cs-index">Case study {String(index + 1).padStart(2, '0')}</div>
+          <div className="cs-index">{String(index + 1).padStart(2, '0')}</div>
           <h3>{p.name}</h3>
           <p className="project-sub">{p.subtitle}</p>
         </div>
@@ -62,16 +62,15 @@ export default function Projects() {
   return (
     <section id="projects">
       <div className="container">
-        <div className="eyebrow">Projects</div>
-        <h2 className="section-title">Selected work, as case studies.</h2>
-        <p className="section-lead">Three projects — each with the problem, my part in it, and what it took to ship.</p>
+        <h2 className="section-title">Projects</h2>
+        <p className="section-lead">Three case studies: the problem, my part in it, and the result.</p>
 
         {CASE_STUDIES.map((p, i) => <CaseStudy p={p} index={i} key={p.name} />)}
 
         <h3 className="subhead">More work</h3>
         <div className="mini-projects">
           {MORE_WORK.map((m) => (
-            <div className="mini-card glass reveal" key={m.title}>
+            <div className="mini-card reveal" key={m.title}>
               <h4><i className={m.icon}></i>{m.title}</h4>
               <p>{m.text}</p>
               {m.href && (

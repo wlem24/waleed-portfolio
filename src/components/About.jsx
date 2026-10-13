@@ -31,11 +31,10 @@ export default function About() {
   return (
     <section id="about">
       <div className="container">
-        <div className="eyebrow">About me</div>
-        <h2 className="section-title">From keeping systems running<br />to building the ones that reason.</h2>
+        <h2 className="section-title">About</h2>
         <div className="about-grid">
           <div className="reveal">
-            <p>My engineering path began on the operations side. For <strong>18+ months at SaudiEx</strong> I worked inside live IoT and telematics platforms — first as an IoT Developer on the Dallah Hospital infant-safety project, then as a Solutions Support Specialist resolving incidents for around 15 client companies a week. That taught me what “production-ready” really means: reproducible diagnosis, clear escalation, and fixes that hold up under load.</p>
+            <p className="lead-p">My engineering path began on the operations side. For <strong>18+ months at SaudiEx</strong> I worked inside live IoT and telematics platforms — first as an IoT Developer on the Dallah Hospital infant-safety project, then as a Solutions Support Specialist resolving incidents for around 15 client companies a week. That taught me what “production-ready” really means: reproducible diagnosis, clear escalation, and fixes that hold up under load.</p>
             <p>The same <strong>SLA discipline</strong> now shapes how I design, test and document software. I moved fully into building through Tuwaiq Academy’s Professional Cloud Software Development program (Google Cloud, GKE, CI/CD, IAM) and a Python bootcamp with Saudi Digital Academy × WeCloudData, where I was named <strong>Champion of the Week</strong>.</p>
             <p>Today I focus on <strong>AI-powered applications</strong>: I built RFPilot with a team of four, and co-built Haqooq AI, a legal-tech RAG assistant that placed <strong>3rd in a national AI hackathon</strong>.</p>
 
