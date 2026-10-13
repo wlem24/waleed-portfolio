@@ -41,6 +41,7 @@ export default function Contact() {
           </form>
 
           <div className="contact-methods">
+            <a href={PROFILE.whatsapp} target="_blank" rel="noopener noreferrer" className="btn btn-whatsapp"><i className="fa-brands fa-whatsapp"></i>WhatsApp</a>
             <a href={`mailto:${PROFILE.email}`} className="btn btn-glass"><i className="fa-regular fa-envelope"></i>{PROFILE.email}</a>
             <a href={PROFILE.linkedin} target="_blank" rel="noopener noreferrer" className="btn btn-glass"><i className="fa-brands fa-linkedin-in"></i>LinkedIn</a>
             <a href={PROFILE.github} target="_blank" rel="noopener noreferrer" className="btn btn-glass"><i className="fa-brands fa-github"></i>GitHub</a>
