@@ -1,4 +1,3 @@
-import VectorField from './VectorField.jsx'
 import { PROFILE } from '../data/site.js'
 
 const STATS = [
@@ -11,7 +10,6 @@ const STATS = [
 export default function Hero() {
   return (
     <header className="hero" id="top">
-      <VectorField />
       <div className="container hero-inner">
         <div>
           <div className="hero-tag"><span className="pulse"></span>Open to full-stack &amp; AI engineering roles · {PROFILE.location}</div>
