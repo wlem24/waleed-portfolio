@@ -1,15 +1,6 @@
 import { useEffect, useState } from 'react'
 
-const LINKS = [
-  ['about', 'About'],
-  ['skills', 'Skills'],
-  ['experience', 'Experience'],
-  ['projects', 'Projects'],
-  ['github', 'GitHub'],
-  ['certifications', 'Certifications'],
-  ['education', 'Education'],
-  ['contact', 'Contact'],
-]
+import { PROFILE, NAV_LINKS } from '../data/site.js'
 
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false)
@@ -17,7 +8,7 @@ export default function Nav() {
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20)
-    window.addEventListener('scroll', onScroll)
+    window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
@@ -25,16 +16,16 @@ export default function Nav() {
     <nav className={scrolled ? 'scrolled' : ''}>
       <div className="container">
         <a href="#top" className="logo">
-          <span className="dot"></span>Waleed Albarakati
+          <span className="dot"></span>{PROFILE.name}
         </a>
         <ul className={`nav-links${open ? ' open' : ''}`}>
-          {LINKS.map(([id, label]) => (
+          {NAV_LINKS.map(([id, label]) => (
             <li key={id}>
               <a href={`#${id}`} onClick={() => setOpen(false)}>{label}</a>
             </li>
           ))}
         </ul>
-        <a href="#contact" className="nav-cta">Let's talk</a>
+        <a href="#contact" className="nav-cta">Let’s talk</a>
         <button className="nav-toggle" aria-label="Toggle menu" onClick={() => setOpen((o) => !o)}>
           <i className="fa-solid fa-bars"></i>
         </button>
