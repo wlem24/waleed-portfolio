@@ -26,8 +26,9 @@ export default function Nav() {
           ))}
         </ul>
         <a href="#contact" className="nav-cta">Contact</a>
-        <button className="nav-toggle" aria-label="Toggle menu" onClick={() => setOpen((o) => !o)}>
-          <i className="fa-solid fa-bars"></i>
+        <button className="nav-toggle" aria-label="Toggle menu" aria-expanded={open} onClick={() => setOpen((o) => !o)}>
+          <i className="fa-solid fa-bars" aria-hidden="true" data-on={!open}></i>
+          <i className="fa-solid fa-xmark" aria-hidden="true" data-on={open}></i>
         </button>
       </div>
     </nav>
